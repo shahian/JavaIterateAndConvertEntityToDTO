@@ -8,3 +8,4 @@ List<BookEntity> books = fillEntity();
                 .peek(System.out::println)
                 .collect(Collectors.toList());
 ```
+This code creates a list of BookEntity objects using the fillEntity method, then it streams through the list using the stream method. The map method is used to transform each BookEntity object into a BookDTO object using the dtoObj method, and then the peek method is used to print each BookDTO object to the console. Finally, the collect method is used to collect the transformed objects into a new list of BookDTO objects. The result of this operation is not stored anywhere, so it is effectively discarded.
